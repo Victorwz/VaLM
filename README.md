@@ -17,7 +17,7 @@ bash setup.sh
 ```
 Then the revised `fairseq` and ohter packages will be installed. We strongly recommend you to use python version >=3.6 <=3.8 for stability.
 
-## Training Corpus Preparation
+## Text and Image Data Preparation
 * Preprocessing text training data:
 ```
 bash myscripts/preprocess_valm_text.sh
@@ -55,7 +55,7 @@ Path to the processed image features:
 Each file's name is like `img_features_12345.pt`, where `12345` is the id of the laion tar file.
 
 
-### Visual Knowledge Base Creation and Text-to-Image Retrieval
+## Visual Knowledge Base Creation and Text-to-Image Retrieval
 * Constructing cached datastore of image features:
 ```
 DSTORE_PATH=./data/image_feature_datastore_200M
@@ -87,7 +87,7 @@ python ImageRetrieval/clip_image_retrieval.py --mount /mnt --ifp /multimodal/VaL
 ```
 * The demo retrieval results will be write to `./html/reports.html`. Download the `html` folder to see the results. 
 
-### Training GPT-See
+## Training GPT-See
 * Example training command on multiple data shards with 16 Tesla-V100 gpus:
 ```
 bash myscripts/train_valm.sh
@@ -98,7 +98,7 @@ For training text-only baseline GPT-BLIND, run:
 bash myscripts/train_gpt_blind.sh
 ```
 
-## Evaluation VaLM
+## Evaluating VaLM
 * Evaluate the trained checkpoint on object color reasoning:
 ```
 python evaluation_scripts/verify_color_prediction.py --path /path/to/ckpt --model-overrides
