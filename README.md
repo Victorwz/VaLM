@@ -87,7 +87,7 @@ python ImageRetrieval/clip_image_retrieval.py --mount /mnt --ifp /multimodal/VaL
 ```
 * The demo retrieval results will be write to `./html/reports.html`. Download the `html` folder to see the results. 
 
-## Training GPT-See
+## Training VaLM
 * Example training command on multiple data shards with 16 Tesla-V100 gpus:
 ```
 bash myscripts/train_valm.sh
