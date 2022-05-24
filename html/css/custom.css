@@ -1,0 +1,425 @@
+/* Template Options */
+
+/*
+	--//-- 1. Color Options --//--
+
+	- Theme color - 40b7b8 (rgba - 64,183,184);
+	- Body background color - f7f7f7;
+	- Sidebar background color - f0f1f2;
+	- Header background color - ffffff;
+	- Header border color - ececec;
+	- Slogan color - 434343;
+	- Slogan border color - bebebe;
+	- Main menu text color - 343434;
+	- Sub-menu background color - ffffff;
+	- Sub-menu border color - e6e6e6;	
+	- Sub-menu text color - 444444;	
+	- Main text color - 444444;
+	- Heading color - 222222;
+	- Content block background color - ffffff;
+	- Content block border color - e6e6e6;
+	- Footer background color - ffffff;
+	- Footer border color - e6e6e6;
+	- Footer copyright color - 434343;
+		
+	
+	--//-- 2. Theme Fonts --//--
+   
+	- Main font - PT Sans;
+	- Headers font - Roboto;
+	
+*/
+	
+/* Default background color */
+body,
+.shortcode_tab_item_title,
+.ww_block canvas,
+#whaterwheel {
+	background:#f7f7f7;
+}
+
+/* Sidebar background color */
+.bg_sidebar {
+	background:#f0f1f2;
+}
+
+/* Header background color & border color */
+.main_header {
+	background:#ffffff;
+	border-bottom:#ececec 1px solid;
+}
+
+/* Header Search */
+.header_search input {
+	background:#ffffff!important;
+	border:#ececec 1px solid!important;
+}
+.main_header nav .search_fadder {
+	background:rgba(255,255,255,0);
+}
+.main_header.search_on nav .search_fadder {
+	background:rgba(255,255,255,1);
+}
+
+/* Slogan */
+.logo_sect .slogan {
+	border-left:#bebebe 1px solid;
+	color:#434343;
+}
+
+/* Menu */
+.main_header nav ul.menu > li > a {
+	color:#343434;
+}
+ul.mobile_menu li a {
+	color:#343434!important;
+}
+.main_header nav ul.menu .sub-menu {
+	background:#ffffff;
+	border:#e6e6e6 1px solid;
+}
+.main_header nav ul.menu > li > .sub-menu:before {
+	border-bottom:#ffffff 5px solid;
+}
+.main_header nav ul.menu > li > .sub-menu:after {
+	border-bottom:#e6e6e6 5px solid;
+}
+.main_header nav .sub-menu a {
+	color:#444444;
+}
+ul.mobile_menu .sub-menu a {
+	color:#444444!important;
+}
+
+/* Footer */
+footer {
+	background:#f7f7f7;
+	border-top:#e6e6e6 1px solid;
+}
+footer .copyright {
+	color:#434343;
+}
+
+/* Selection background */
+::selection {background:#40b7b8;
+}
+::-moz-selection {background:#40b7b8;
+}
+
+/* Typography & Shortcodes */
+h5.shortcode_accordion_item_title,
+h5.shortcode_toggles_item_title,
+h5.shortcode_accordion_item_title.state-active {
+	color:#444444!important;
+}
+h5.shortcode_accordion_item_title,
+h5.shortcode_toggles_item_title,
+.featured_posts .item_wrapper,
+.featured_portfolio .item_wrapper,
+.columns1 .gallery_item_wrapper,
+.list-of-images .gallery_item_wrapper,
+.shortcode_tab_item_title:hover,
+.shortcode_tab_item_title.active,
+.all_body_cont,
+.shortcode_messagebox,
+.price_item,
+.before-after,
+.promoblock_wrapper,
+.module_team .item,
+.post_preview_wrapper,
+.box_date .box_day,
+.pagerblock li a,
+.blog_post_page,
+.blogpost_user_meta,
+.portfolio_item_block,
+.fw_preview_wrapper,
+.cont_gallery_wrapper,
+.fw-blog_post-footer,
+.sp-blog_post-footer,
+.load_more_works,
+.notification_error,
+.notification_ok {
+	background: #ffffff;
+	border:#e6e6e6 1px solid;
+}
+
+.notification_error:after,
+.notification_ok:after {
+	background: #e6e6e6;
+}
+
+.shortcode_tab_item_title {
+	border:#e6e6e6 1px solid;
+}
+.shortcode_messagebox:before {
+	background:#e6e6e6;
+}
+.shortcode_tab_item_title.active:before,
+.beforeAfter_wrapper .result_line:after,
+.beforeAfter_wrapper .result_line:before,
+.fw_content_wrapper {
+	background: #ffffff;
+}
+.price_item .price_item_title {
+	border-bottom:#e6e6e6 1px solid;
+}
+p, td, div,
+.blogpost_share a:hover,
+.optionset li.selected a,
+.btn_back,
+.widget_nav_menu ul li a,
+.widget_archive ul li a,
+.widget_pages ul li a,
+.widget_categories ul li a,
+.widget_recent_entries ul li a,
+.widget_meta ul li a {
+	color:#444444;
+	font-weight:400;
+}
+a:hover,
+.chart,
+.blogpreview_top .listing_meta span a:hover,
+.pagerblock li a,
+.prev_next_links div a:hover,
+.prev_next_links div a:hover:before,
+.prev_next_links div a:hover:after,
+.ltl_next,
+.ltl_prev,
+.widget_posts .post_title {
+	color:#444444;
+	font-weight:400;
+}
+.slider_data h6,
+.slider_info .listing_meta a:hover {
+	color:#444444!important;
+}
+.main_header nav ul.menu > li > a {
+	color:#343434;
+}
+.main_header nav ul.sub-menu li a {
+	color:#444444;
+}
+.main_header nav ul.sub-menu > li:hover > a,
+.main_header nav ul.sub-menu > li.current-menu-item > a,
+.main_header nav ul.sub-menu > li.current-menu-parent > a,
+.iconbox_wrapper .ico i,
+.shortcode_iconbox a:hover .iconbox_body,
+.shortcode_iconbox a:hover .iconbox_body p,
+.shortcode_iconbox a:hover .iconbox_title,
+a,
+blockquote.shortcode_blockquote.type5:before,
+.main_header nav ul.menu > li:hover > a,
+.main_header nav ul.menu > li.current-menu-ancestor > a,
+.main_header nav ul.menu > li.current-menu-item > a,
+.main_header nav ul.menu > li.current-menu-parent > a,
+.dropcap.type2,
+.dropcap.type5,
+.featured_items_title a:hover,
+.shortcode_tab_item_title:hover,
+.counter_wrapper .ico_wrapper i,
+.most_popular .price_item_cost h1,
+.most_popular .price_item_cost h4,
+.pagerblock li a:hover,
+.blogpost_title a:hover,
+.optionset li a:hover,
+.portfolio_content h6 a:hover,
+.portfolio_dscr_top a:hover,
+.grid-port-cont h6 a:hover,
+.btn_back:hover,
+.fs_sharing a:hover,
+.count_ico:hover i,
+.ltl_prev:hover,
+.ltl_next:hover,
+.widget_nav_menu ul li a:hover,
+.widget_archive ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_categories ul li.current-menu-item a,
+.widget_recent_entries ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_posts .post_title:hover {
+	color:#40b7b8;
+}
+h5.shortcode_accordion_item_title:hover,
+h5.shortcode_toggles_item_title:hover,
+.comment-reply-link:hover:before,
+.comment_info a:hover,
+.portfolio_dscr_top a:hover,
+ul.mobile_menu > li:hover > a,
+ul.mobile_menu > li.current-menu-ancestor > a,
+ul.mobile_menu > li.current-menu-item > a,
+ul.mobile_menu > li.current-menu-parent > a,
+.mobile_menu ul.sub-menu > li:hover > a,
+.mobile_menu ul.sub-menu > li.current-menu-item > a,
+.mobile_menu ul.sub-menu > li.current-menu-parent > a {
+	color:#40b7b8!important;
+}
+.highlighted_colored,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.shortcode_button.btn_type5,
+.shortcode_button.btn_type1:hover,
+.shortcode_button.btn_type1_dark:hover,
+.shortcode_button.btn_type4:hover,
+.main_header nav ul.menu > li > a:before,
+h5.shortcode_accordion_item_title:hover .ico:before,
+h5.shortcode_toggles_item_title:hover .ico:before,
+h5.shortcode_accordion_item_title:hover .ico:after,
+h5.shortcode_toggles_item_title:hover .ico:after,
+.box_date .box_month,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.search404 .search_button,
+.preloader:after {
+	background-color:#40b7b8;
+}
+#mc_signup_submit:hover {
+	background-color:#40b7b8!important;
+}
+.shortcode_button.btn_type4:hover {
+	box-shadow:inset 1px 1px 0 #40b7b8, inset -1px -1px 0 #40b7b8, inset 0 -1px 0 #40b7b8, inset -1px 0 0 #40b7b8;
+}
+blockquote.shortcode_blockquote.type5 .blockquote_wrapper,
+.widget_tag_cloud a:hover,
+.columns2 .portfolio_item .portfolio_item_wrapper h5,
+.columns3 .portfolio_item .portfolio_item_wrapper h5,
+.columns4 .portfolio_item .portfolio_item_wrapper h5,
+.fs_blog_top,
+.simple-post-top,
+.widget_search .search_form,
+.module_cont hr.type3,
+blockquote.shortcode_blockquote.type2 {
+	border-color:#40b7b8;
+}
+.widget_flickr .flickr_badge_image a .flickr_fadder {
+	background:rgba(64,183,184,0);
+}
+.widget_flickr .flickr_badge_image a:hover .flickr_fadder {
+	background:rgba(64,183,184,0.6);
+}
+
+/* Fonts Families and Sizes */
+* {
+	font-family:PT Sans;
+	font-weight:400;
+}
+p, td, div,	blockquote p, input {
+	font-size:14px;
+	line-height:22px;
+}
+.main_header nav ul.menu > li > a {
+	font-size:13px;
+	line-height: 15px;
+}
+h1, h2, h3, h4, h5, h6,
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-family: Roboto;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+	text-decoration:none!important;
+	padding:0;
+	color:#222222;
+}
+.sidebar_header {
+	font-family:PT Sans;
+}
+.load_more_works {
+	font-family: Roboto;
+	color:#222222;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+}
+.box_date span,
+.countdown-row .countdown-section:before,
+.countdown-amount,
+.countdown-period {
+	font-family: Roboto;
+}
+.iconbox_header .ico i,
+.title,	.comment-reply-link:before,
+.ww_footer_right .blogpost_share span {
+	color:#222222;
+}
+a.shortcode_button,
+.chart.easyPieChart,
+.chart.easyPieChart span,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.search404 .search_button {
+	font-family: Roboto;
+}
+h1, h2, h3, h4, h5, h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	font-weight:400;
+}
+h4,	h4 span,
+h4 a,
+h4 a:hover,
+h3.comment-reply-title {
+	font-weight:500;
+}
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	font-weight:900;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-font-smoothing:antialiased;
+}
+h1, h1 span, h1 a {
+	font-size:26px;
+	line-height:28px;
+}
+h2, h2 span, h2 a {
+	font-size:22px;
+	line-height:24px;
+}
+h3, h3 span, h3 a {
+	font-size:20px;
+	line-height:22px;
+}
+h4, h4 span, h4 a, 	h3.comment-reply-title {
+	font-size:16px;
+	line-height:18px;
+}
+h5, h5 span, h5 a {
+	font-size:14px;
+	line-height:16px;
+}
+h6, h6 span, h6 a,
+.comment_info h6:after {
+	font-size:13px;
+	line-height:15px;
+}
+@media only screen and (max-width: 760px) {
+	.fw_content_wrapper {
+		background:#f7f7f7!important;
+	}
+}
+
+/* Logo Size */
+.logo_def,
+.logo_retina {
+	width:80px;
+	height:25px;
+}
