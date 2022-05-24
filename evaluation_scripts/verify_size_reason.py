@@ -54,7 +54,7 @@ def main(model_path="", data_path="", overrides=""):
     print("Object Size Reasoning Accuracy is : {}".format(acc_cnt / total_cnt))
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser(description="Arguments for evaluating GPT-See")
+    parser = argparse.ArgumentParser(description="Arguments for evaluating VaLM")
     parser.add_argument("--path", type=str, default="/path/to/ckpt", help="The path to the model")
     parser.add_argument("--data-path", type=str, default="./object_size/sizePairsFull.txt", help="The path to the data")
     parser.add_argument("--model-overrides", action="store_true", default=False, help="Overrides args for model")

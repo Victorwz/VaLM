@@ -121,7 +121,7 @@ def main(args):
     print("Accuracy: %.4f"%(1 - errors / total,))
 
 if __name__=="__main__":
-    parser = argparse.ArgumentParser(description="Arguments for evaluating GPT-See")
+    parser = argparse.ArgumentParser(description="Arguments for evaluating VaLM")
     parser.add_argument("--path", type=str, default="/path/to/ckpt", help="The path to the model")
     parser.add_argument("--data-path", type=str, default="./data/lambada/lambada_test.jsonl", help="The path to the test data")
     parser.add_argument("--model-overrides", action="store_true", default=False, help="Overrides args for model")
