@@ -145,44 +145,13 @@ class SimpleTokenizer(object):
 
 if __name__ == "__main__":
     tokenizer = SimpleTokenizer()
-    # words = set()
-    # with open("clip.vocab.fairseq", "w") as vocab_file:
-    #     for word, idx in tokenizer.encoder.items():
-    #         print(word)
-    #         if "</w>" in word:
-    #             word = word[:-4]
-    #         elif word in ['<|startoftext|>', '<|endoftext|>']:
-    #             pass
-    #         else:
-    #             word = word + "@@"
-    #         if word in words:
-    #             print(word)
-    #             raise KeyError
-    #         else:
-    #             words.add(word)
-    #         vocab_file.write(word + " 1\n")
-    # for split in ["train", "valid", "test"]:
-    #     with open("wikitext-103-raw/wiki.{}.detok".format(split), "r") as f:
-    #         with open("wikitext-103-raw/tmp/bpe.{}".format(split), "w") as write_file:
-    #             for idx, line in enumerate(tqdm(f.readlines())):
-    #                 line = line.strip("\n").strip()
-    #                 encode_text = tokenizer.encode_text(line)
-    #                 write_file.write(encode_text + "\n")
 
     try:
-        if sys.argv[1] == "--train":
-            train_shard = sys.argv[2]
-            with open("/home/v-weizhiwang/data/gpt2-pretrain/bpe_sharded/bpe.{}".format(train_shard), "w") as write_file:
-                for line in tqdm(open("/mnt/multimodal/data/text/data-bin/roberta-cc100-ori/train_sharded/train.{}.txt".format(train_shard), "r")):
+        with open(sys.argv[1], "r") as read_file:
+            with open(sys.argv[2], "w") as write_file:
+                for line in tqdm(read_file):
                     line = line.strip("\n").strip()
                     encode_text = tokenizer.encode_text(line)
                     write_file.write(encode_text + "\n")
-        else:
-            with open(sys.argv[1], "r") as read_file:
-                with open(sys.argv[2], "w") as write_file:
-                    for line in tqdm(read_file):
-                        line = line.strip("\n").strip()
-                        encode_text = tokenizer.encode_text(line)
-                        write_file.write(encode_text + "\n")
     except AttributeError:
         print("Arguments Error")

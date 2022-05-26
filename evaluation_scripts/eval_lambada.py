@@ -98,7 +98,7 @@ def main(args):
 
     if args.model_overrides:
         # override_args = json.loads(overrides)
-        override_args = {"dstore_filename": "/home/v-weizhiwang/data/image_feature_datastore_200M", "use_gpu_to_search": False,  "use_knn_datastore": False, "load_knn_datastore": False}
+        override_args = {"dstore_filename": "./data/image_feature_datastore_200M", "use_gpu_to_search": False, } #  "use_knn_datastore": False, "load_knn_datastore": False}
     else:
         override_args = ""
 
