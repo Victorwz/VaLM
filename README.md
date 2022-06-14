@@ -1,12 +1,11 @@
 # VaLM
 Official implementation of our paper "[Visually-Augmented Language Modeling](https://arxiv.org/abs/2205.10178)". Please cite our paper if you find this repository helpful in your research:
 ```
-@article{Wang2022VisuallyAugmentedLM,
+@article{wang2022visually,
   title={Visually-Augmented Language Modeling},
-  author={Weizhi Wang and Li Dong and Hao Cheng and Haoyu Song and Xiaodong Liu and Xifeng Yan and Jianfeng Gao and Furu Wei},
-  journal={ArXiv},
-  year={2022},
-  volume={abs/2205.10178}
+  author={Wang, Weizhi and Dong, Li and Cheng, Hao and Song, Haoyu and Liu, Xiaodong and Yan, Xifeng and Gao, Jianfeng and Wei, Furu},
+  journal={arXiv preprint arXiv:2205.10178},
+  year={2022}
 }
 ```
 
