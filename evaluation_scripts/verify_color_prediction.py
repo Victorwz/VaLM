@@ -28,7 +28,7 @@ def main(model_path="", data_path="", overrides=False):
 
     model, _ = load_model_ensemble([model_path], arg_overrides=override_args, task=None)
     model = model[0]
-    mdoel = model.eval()
+    model = model.eval()
     model = model.cuda()
 
     tokenizer = clip.simple_tokenizer.SimpleTokenizer()
